@@ -13,7 +13,7 @@ const CarsForm = ({submit}) => {
 
         const nombreValido = form.nombre.length >= 3 && !form.nombre.startsWith(' ')
         const autoValido = form.autoPreferido.length >= 6
-        const edadValida = !isNaN(form.edad)
+        const edadValida = form.edad.length > 0 && form.edad >= 12 && !isNaN(form.edad)
 
         if (!nombreValido || !autoValido || !edadValida) {
             setError('🚨 Por favor, chequea que la información sea correcta 🚨')

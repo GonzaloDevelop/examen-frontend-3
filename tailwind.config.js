@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'red-gradient': 'radial-gradient(at right top, rgba(142, 15, 1, 1.0), rgba(64, 18, 14, 1.0))',
+        'green-gradient': 'radial-gradient(at left top, rgba(16, 183, 59, 1.0), rgba(9, 142, 1, 1.0))'
+      }),
       outline: {
         '0': '0',
       },
